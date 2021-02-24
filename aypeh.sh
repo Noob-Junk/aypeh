@@ -23,7 +23,6 @@ exit 1
 else
 printf " \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
 sleep 1
-banner
 menu
 fi
 
@@ -77,7 +76,6 @@ printf "\e[0m\n"
 read -p $'  \e[1;31m>>\e[0m\e[1;96m  \en' mainorexit1
 
 if [[ $mainorexit1 == 1 || $mainorexit1 == 01 ]]; then
-banner
 menu
 elif [[ $mainorexit1 == 2 || $mainorexit1 == 02 ]]; then
 printf "\e[0m\n"
