@@ -46,7 +46,6 @@ mycurrency=$(echo $myipaddripapico | grep -Po '(?<="currency":)[^},]*' | tr -d '
 mylanguage=$(echo $myipaddripapico | grep -Po '(?<="languages":)[^},]*' | tr -d '[]"' | sed 's/\(<[^>]*>\|<\/>\|{1|}\)//g')
 mycalling=$(echo $myipaddripapico | grep -Po '(?<="country_calling_code":)[^},]*' | tr -d '[]"' | sed 's/\(<[^>]*>\|<\/>\|{1|}\)//g')
 
-banner
 printf "\e[0m\n"
 printf "\e[0m\n"
 printf "  \e[0m\e[1;93m  Ip Address    \e[0m\e[1;96m:\e[0m\e[1;92m   $myip\e[0m\n"
@@ -114,7 +113,6 @@ usercurrency=$(echo $ipaddripapico | grep -Po '(?<="currency":)[^},]*' | tr -d '
 userlanguage=$(echo $ipaddripapico | grep -Po '(?<="languages":)[^},]*' | tr -d '[]"' | sed 's/\(<[^>]*>\|<\/>\|{1|}\)//g')
 usercalling=$(echo $ipaddripapico | grep -Po '(?<="country_calling_code":)[^},]*' | tr -d '[]"' | sed 's/\(<[^>]*>\|<\/>\|{1|}\)//g')
 
-banner
 printf "\e[0m\n"
 printf "\e[0m\n"
 printf "  \e[0m\e[1;93m  Ip Address    \e[0m\e[1;96m:\e[0m\e[1;92m   $userip\e[0m\n"
@@ -144,7 +142,6 @@ printf "\e[0m\n"
 read -p $'  \e[1;31m>>\e[0m\e[1;96m  \en' mainorexit2
 
 if [[ $mainorexit2 == 1 || $mainorexit2 == 01 ]]; then
-banner
 menu
 elif [[ $mainorexit2 == 2 || $mainorexit2 == 02 ]]; then
 printf "\e[0m\n"
